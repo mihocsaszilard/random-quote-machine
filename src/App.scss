@@ -72,12 +72,21 @@ button {
   justify-content: space-between;
 }
 
-.quote {
+.quote,
+.quoteBg {
   position: absolute;
+  color: #fefefe;
   left: 0;
   top: 0;
   font-size: 50px;
   margin: 17px;
+}
+
+.quoteBg {
+  font-size: 54px;
+  color: #000;
+  left: 1px;
+  top: 1px;
 }
 
 .fa-twitter-square {
@@ -89,11 +98,18 @@ button {
   padding: 10px 10px 5px 10px;
 }
 
-.copyright {
+.copyright,
+.title {
   position: absolute;
   width: 100%;
   text-align: center;
   bottom: 15px;
   margin: auto;
   text-shadow: 0 0 4px #fff;
+}
+
+.title {
+  top: 50px;
+  font-weight: 300;
+  font-size: 50px;
 }

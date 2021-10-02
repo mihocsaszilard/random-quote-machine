@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default class QuoteMachine extends React.Component {
   constructor(props) {
@@ -62,9 +63,12 @@ export default class QuoteMachine extends React.Component {
   render() {
     return (
       <div>
+        <h1 className="title">Random Quote Machine</h1>
         {this.state.quote ? (
           <div id="wrapper" style={{ backgroundColor: this.randomColor() }}>
             <div id="quote-box">
+              <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
+              <FontAwesomeIcon icon={faQuoteLeft} className="quoteBg" />
               <p id="text">{this.state.quote}</p>
               <p id="author">- {this.state.author}</p>
               <button
