@@ -81,12 +81,12 @@ button {
 }
 
 .fa-twitter-square {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
   color: black;
-  font-size: 3rem;
-  transition: 0.3s;
-  &:hover {
-    transform: scale(1.1);
-  }
+  font-size: 2rem;
+  padding: 10px 10px 5px 10px;
 }
 
 .copyright {

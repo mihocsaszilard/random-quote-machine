@@ -1,14 +1,17 @@
 import React from "react";
 import "./App.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default class QuoteMachine extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       error: null,
-      quotes: "",
+      quote: "",
       author: "",
       bgColor: "",
+      api: "https://api.quotable.io/random",
     };
   }
 
@@ -17,7 +20,7 @@ export default class QuoteMachine extends React.Component {
   }
 
   getQuote = () => {
-    fetch("https://api.quotable.io/random")
+    fetch(this.state.api)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -44,6 +47,18 @@ export default class QuoteMachine extends React.Component {
     return color;
   };
 
+  tweetQuote = () => {
+    const url = "twitter.com";
+    let text = `${this.state.author} - ${this.state.quote}`;
+    window.open(
+      "http://twitter.com/share?url=" +
+        encodeURIComponent(url) +
+        "&text=" +
+        encodeURIComponent(text),
+      ""
+    );
+  };
+
   render() {
     return (
       <div>
@@ -59,6 +74,14 @@ export default class QuoteMachine extends React.Component {
                 }}
               >
                 New Quote
+              </button>
+              <button
+                className="fa-twitter-square"
+                onClick={() => {
+                  this.tweetQuote();
+                }}
+              >
+                <FontAwesomeIcon icon={faTwitter} />
               </button>
             </div>
           </div>
