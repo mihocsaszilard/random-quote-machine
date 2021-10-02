@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap");
+
+$font: "Comfortaa", cursive;
+
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: $font;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  position: relative;
+  font-family: $font;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: auto;
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#text {
+  font-size: 2rem;
+  margin: 80px 80px 20px;
+  text-shadow: 0 0 4px #fff;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.4s ease-in;
+}
+
+#author {
+  width: 85%;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 2px #222;
+}
+
+#btn-container {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  justify-content: space-between;
+}
+
+.quote {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 50px;
+  margin: 17px;
+}
+
+.fa-twitter-square {
+  color: black;
+  font-size: 3rem;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 15px;
+  margin: auto;
+  text-shadow: 0 0 4px #fff;
+}
