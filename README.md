@@ -1,6 +1,6 @@
 <h1 align=center>Random Quote Machine</h1> 
 
-<h3>Simple React application, which allows users to get their daily quote dose with one click.</h3>
+<h3 align=center>Simple React application, which allows users to get their daily dose of quote with one click.</h3>
 
 
 ![img](https://user-images.githubusercontent.com/62619507/135720996-5ec65f4b-9610-4c7c-9b83-3bf81a988f3f.PNG)
