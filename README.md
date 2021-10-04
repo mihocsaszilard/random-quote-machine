@@ -1,5 +1,7 @@
 #Random Quote Machine 
 
+###Simple React application, which allows users to get their daily quote dose with one click.
+
 
 ![img](https://user-images.githubusercontent.com/62619507/135720996-5ec65f4b-9610-4c7c-9b83-3bf81a988f3f.PNG)
 ![img3](https://user-images.githubusercontent.com/62619507/135880499-d5b434e6-367b-41ad-87bf-389dc022a9c2.PNG)
