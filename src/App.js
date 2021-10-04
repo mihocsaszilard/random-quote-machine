@@ -63,9 +63,9 @@ export default class QuoteMachine extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="title">Random Quote Machine</h1>
         {this.state.quote ? (
           <div id="wrapper" style={{ backgroundColor: this.randomColor() }}>
+            <h1 className="title">Random Quote Machine</h1>
             <div id="quote-box">
               <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
               <FontAwesomeIcon icon={faQuoteLeft} className="quoteBg" />
@@ -88,14 +88,14 @@ export default class QuoteMachine extends React.Component {
                 <FontAwesomeIcon icon={faTwitter} />
               </button>
             </div>
+            <p className="copyright">
+              Created by:&nbsp;
+              <a href="https://github.com/mihocsaszilard">mihocsaszilard</a>
+            </p>
           </div>
         ) : (
           <div>{this.state.error}</div>
         )}
-        <p className="copyright">
-          Created by:&nbsp;
-          <a href="https://github.com/mihocsaszilard">mihocsaszilard</a>
-        </p>
       </div>
     );
   }
